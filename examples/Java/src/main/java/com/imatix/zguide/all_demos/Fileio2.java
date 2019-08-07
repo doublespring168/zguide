@@ -1,3 +1,5 @@
+package com.imatix.zguide.all_demos;
+
 import org.zeromq.ZContext;
 import org.zeromq.ZFrame;
 import org.zeromq.ZMQ;

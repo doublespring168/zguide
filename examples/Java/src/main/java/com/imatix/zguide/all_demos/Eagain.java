@@ -1,3 +1,5 @@
+package com.imatix.zguide.all_demos;
+
 import org.zeromq.ZContext;
 import org.zeromq.ZMQ;
 import org.zeromq.ZMQException;

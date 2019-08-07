@@ -1,3 +1,5 @@
+package com.imatix.zguide.all_demos;
+
 import org.zeromq.*;
 import org.zeromq.ZMQ.Socket;
 import zmq.ZError;

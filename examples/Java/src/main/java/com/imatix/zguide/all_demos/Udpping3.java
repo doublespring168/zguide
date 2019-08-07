@@ -1,3 +1,5 @@
+package com.imatix.zguide.all_demos;
+
 import com.imatix.zguide.all_demos.Interface;
 import org.zeromq.ZMsg;
 
