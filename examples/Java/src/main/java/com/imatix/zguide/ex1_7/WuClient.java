@@ -27,7 +27,7 @@ public class WuClient {
         Socket subscriber = context.socket(SUB);
         subscriber.connect(ZConstants.URL.TCP_5556);
         //  Subscribe to zipCode, default is NYC, 10001
-        String filter = (args.length > 0) ? args[0] : "10001";
+        String filter = (args.length > 0) ? args[0] : "10002";
         subscriber.subscribe(filter.getBytes());
         // Process 100 updates
         long totalTemp = 0;
@@ -45,6 +45,7 @@ public class WuClient {
             updateNum++;
         }
         System.out.printf("Average Temperature for zipCode %s was %d", filter, (int) (totalTemp / updateNum));
+        System.out.println("");
         subscriber.close();
         context.term();
     }
